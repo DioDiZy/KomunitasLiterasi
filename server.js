@@ -66,7 +66,7 @@ app.post("/api/unlock", (req, res) => {
   if (member.key === key) {
     return res.json({ unlocked: true, description: member.description });
   } else {
-    return res.status(401).json({ unlocked: false, error: "Passwordnya salah, coba lagi" });
+    return res.status(401).json({ unlocked: false, error: "Passwordnya salah, kamu bukan" + ` ${names[i]}` });
   }
 });
 
