@@ -5,6 +5,7 @@ const bodyParser = require("body-parser");
 
 const app = express();
 const PORT = 3000;
+app.use(express.static("public"));
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -72,6 +73,7 @@ const deskripsiAnak = [
   "Anak 29",
   "Anak 30",
 ];
+app.use;
 // Dummy data for members
 const members = Array.from({ length: 30 }, (_, i) => ({
   id: i + 1,
