@@ -77,36 +77,36 @@ const quotes = [
 ];
 
 const kunci = [
-  "Kreatif",
-  "Tangguh",
-  "Berani",
-  "Cerdas",
-  "Empatik",
-  "Konsisten",
-  "Visioner",
-  "Tekun",
-  "Mandiri",
-  "Adaptif",
-  "Optimis",
-  "RendahHati",
-  "Peka",
-  "Setia",
-  "PenuhHarapan",
-  "Inisiatif",
-  "Bijak",
-  "Peduli",
-  "PekerjaKeras",
-  "Kharismatik",
-  "Berintegritas",
-  "PenuhWarna",
-  "PercayaDiri",
-  "Tenang",
-  "Pemberani",
-  "Analitis",
-  "Terbuka",
-  "Sederhana",
-  "Ceria",
-  "Positif",
+  "Visioner", // Dio Syahputra: punya visi besar, pemimpin yang peka dan berpikir ke depan
+  "Gigih", // Muhammad Roekhan: penuh semangat, tahan banting, selalu mau belajar
+  "Karismatik", // Livia Salsabila: punya pesona saat berbicara dan berdiri di depan umum
+  "Penengah", // Gabriella F. Pandiangan: sabar, bijak, jadi jembatan di tengah konflik
+  "Potensial", // Stevyn Angely Hutabarat: punya bakat besar yang terus tumbuh
+  "Bijaksana", // Dwi Alya Artika: inspiratif, mampu memberi pandangan matang
+  "Mandiri", // Salsabila Nanda Lestari: kuat, bisa berdiri sendiri tanpa banyak bergantung
+  "Authentik", // Lutviya Setiyaningsih: punya jati diri yang kuat dan beda dari yang lain
+  "Bertekad", // Panji Akbar Dewantara: punya tekad dan kemauan keras buat berkembang
+  "Pemimpin", // Teguh Rahmat Syahputra: natural leader, berani dan bisa jadi panutan
+  "Berani", // Fatir Gibran: tak ragu menyampaikan ide dan menunjukkan dirinya
+  "Respectful", // Lawrencius C.K Panjaitan: sopan, menghargai, dan disegani banyak orang
+  "Berproses", // Ataka Putu Samsuri K.: sedang terus tumbuh dan berkembang perlahan
+  "Terencana", // Nadine Ananda Syahfitri: punya strategi dalam tiap langkah
+  "Tangguh", // Puja Satria Tawakal: bisa diandalkan, tetap berdiri walau tertekan
+  "Mendalam", // Raysa Salsabila: kata-katanya penuh makna dan menyentuh
+  "Kreatif", // Stefani Siahaan: punya imajinasi dan daya cipta luar biasa
+  "Analitis", // Farhat Huda: mampu melihat detail dan pola secara jernih
+  "Tekun", // Nopri Anita Libertiana S: terus berusaha tanpa lelah, sabar dalam proses
+  "Optimis", // Ibrahim Prasaja Putra: selalu lihat sisi terang dari keadaan
+  "Unik", // Avril Chrysalis Lilihata: tampil beda dan selalu jadi sorotan positif
+  "Cekatan", // Davina Kezia Sianturi: gesit, cepat belajar dan tanggap
+  "Berprinsip", // Musaddad Amin: punya nilai yang dijaga dan dijunjung tinggi
+  "Tulus", // Mohammad Haikal Nur Rafidana: apa adanya, jujur, dan penuh niat baik
+  "Penyemangat", // Annisa Nur Amelia: selalu membawa aura positif dan energi baru
+  "Tenang", // Aulia Isnaeni Azkatunnisa: jarang panik, selalu stabil menghadapi situasi
+  "Peka", // Aliff Akbar Pelawi: bisa membaca situasi dan perasaan orang lain
+  "Loyal", // Kevin Binsar Sinaga: setia kawan dan bertanggung jawab terhadap komitmen
+  "Bersinar", // Rafif Syahputra Pasaribu: selalu menarik perhatian karena kontribusinya
+  "Hangat", // Yola Hardini Girsang: bikin nyaman orang di sekitarnya
 ];
 
 app.use;
