@@ -78,12 +78,12 @@ const members = Array.from({ length: 30 }, (_, i) => ({
   name: ` ${names[i]}`,
   key: `kunci${i + 1}`,
   description: `Ini adalah deskripsi dari Anggota ${deskripsiAnak[i]}`,
-  photo: `public/images/${i + 1}.jpg`,
+  // photo: `public/images/${i + 1}.jpg`,
 }));
 
 // Endpoint to get all member names (no keys)
 app.get("/api/members", (req, res) => {
-  const safeMembers = members.map(({ id, name, photo }) => ({ id, name, photo }));
+  const safeMembers = members.map(({ id, name }) => ({ id, name }));
   res.json(safeMembers);
 });
 
