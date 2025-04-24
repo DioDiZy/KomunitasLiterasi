@@ -80,13 +80,45 @@ const quotes = [
     // 31+ bisa ditambahkan bila ada tambahan anggota
  
 ];
+const kunci = [
+  "Kreatif",
+  "Tangguh",
+  "Berani",
+  "Cerdas",
+  "Empatik",
+  "Konsisten",
+  "Visioner",
+  "Tekun",
+  "Mandiri",
+  "Adaptif",
+  "Optimis",
+  "RendahHati",
+  "Peka",
+  "Setia",
+  "PenuhHarapan",
+  "Inisiatif",
+  "Bijak",
+  "Peduli",
+  "PekerjaKeras",
+  "Kharismatik",
+  "Berintegritas",
+  "PenuhWarna",
+  "PercayaDiri",
+  "Tenang",
+  "Pemberani",
+  "Analitis",
+  "Terbuka",
+  "Sederhana",
+  "Ceria",
+  "Positif"
+];
 
 app.use;
 // Dummy data for members
 const members = Array.from({ length: 30 }, (_, i) => ({
   id: i + 1,
   name: ` ${names[i]}`,
-  key: `kunci${i + 1}`,
+  key: `${kunci[i].toLocaleLowerCase()}`,
   description: `${firstNames[i]}, ${quotes[i]}`,
   photo: `public/images/${i + 1}.jpg`,
 }));
