@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Our Community</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+  <body class="bg-gradient-to-br from-purple-100 to-white min-h-screen font-sans">
+    <!-- Hero section -->
+    <section class="bg-blue-600 py-20">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center justify-between">
+          <div class="md:w-1/2 mb-8 md:mb-0">
+            <h1 class="text-white font-bold text-5xl leading-tight mb-6">Discover the world's best coffee</h1>
+            <p class="text-white text-xl mb-8">From hand-picked farms to your cup, we source the finest beans and roast them to perfection.</p>
+            <a href="#" class="px-6 py-3 bg-white text-blue-600 font-bold rounded-full hover:bg-blue-700 transition duration-200">Shop now</a>
+          </div>
+          <div class="md:w-1/2">
+            <img src="https://plus.unsplash.com/premium_photo-1675716443562-b771d72a3da7" alt="Coffee beans" class="w-full rounded-lg shadow-lg" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured section -->
+    <section class="py-20">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-gray-800 mb-8">Featured products</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba" alt="Coffee" class="w-full h-64 object-cover" />
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-800 mb-2">Single Origin Blend</h3>
+              <p class="text-gray-700 text-base">Our most popular blend, featuring beans from a single farm in Ethiopia. Notes of chocolate, berries, and citrus.</p>
+              <div class="mt-4 flex items-center justify-between">
+                <span class="text-gray-700 font-medium">$14.99</span>
+                <button class="px-4 py-2 bg-blue-600 text-white font-bold rounded-full hover:bg-blue-700 transition duration-200">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img src="https://plus.unsplash.com/premium_photo-1675716443562-b771d72a3da7" alt="Coffee" class="w-full h-64 object-cover" />
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-800 mb-2">Dark Roast Blend</h3>
+              <p class="text-gray-700 text-base">A bold and flavorful blend of beans from Brazil, Colombia, and Indonesia. Notes of caramel, nuts, and tobacco.</p>
+              <div class="mt-4 flex items-center justify-between">
+                <span class="text-gray-700 font-medium">$12.99</span>
+                <button class="px-4 py-2 bg-blue-600 text-white font-bold rounded-full hover:bg-blue-700 transition duration-200">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img src="https://plus.unsplash.com/premium_photo-1675716443562-b771d72a3da7" alt="Coffee" class="w-full h-64 object-cover" />
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-800 mb-2">Dark Roast Blend</h3>
+              <p class="text-gray-700 text-base">A bold and flavorful blend of beans from Brazil, Colombia, and Indonesia. Notes of caramel, nuts, and tobacco.</p>
+              <div class="mt-4 flex items-center justify-between">
+                <span class="text-gray-700 font-medium">$12.99</span>
+                <button class="px-4 py-2 bg-blue-600 text-white font-bold rounded-full hover:bg-blue-700 transition duration-200">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img src="https://plus.unsplash.com/premium_photo-1675716443562-b771d72a3da7" alt="Coffee" class="w-full h-64 object-cover" />
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-800 mb-2">Dark Roast Blend</h3>
+              <p class="text-gray-700 text-base">A bold and flavorful blend of beans from Brazil, Colombia, and Indonesia. Notes of caramel, nuts, and tobacco.</p>
+              <div class="mt-4 flex items-center justify-between">
+                <span class="text-gray-700 font-medium">$12.99</span>
+                <button class="px-4 py-2 bg-blue-600 text-white font-bold rounded-full hover:bg-blue-700 transition duration-200">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main class="container mx-auto px-4 py-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" x-data="community()">
+      <template x-for="member in members" :key="member.id">
+        <div class="bg-white rounded-2xl shadow-lg p-4 transition hover:scale-105" x-data="{ inputKey: '', info: null, error: '' }">
+          <div class="flex flex-col items-center">
+            <div class="w-16 h-16 rounded-full bg-purple-200 flex items-center justify-center text-xl font-bold text-purple-700">
+              <span x-text="member.id"></span>
+            </div>
+            <h2 class="mt-3 font-semibold text-lg" x-text="member.name"></h2>
+
+            <template x-if="!info">
+              <div class="mt-4 w-full">
+                <input x-model="inputKey" type="password" placeholder="Masukkan kunci" class="w-full px-3 py-2 border rounded-lg" />
+                <button
+                  class="mt-2 w-full bg-purple-600 text-white px-3 py-2 rounded-lg hover:bg-purple-700"
+                  @click="
+                  fetch('http://localhost:3000/api/unlock', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ id: member.id, key: inputKey })
+                  })
+                  .then(res => res.ok ? res.json() : res.json().then(err => Promise.reject(err)))
+                  .then(data => info = data.description)
+                  .catch(err => error = err.error)
+                "
+                >
+                  Buka
+                </button>
+                <p class="text-red-500 text-sm mt-1" x-text="error"></p>
+              </div>
+            </template>
+
+            <template x-if="info">
+              <div class="mt-4 bg-purple-100 p-4 rounded-xl text-sm text-gray-700">
+                <p><strong>Profil:</strong> <span x-text="info"></span></p>
+              </div>
+            </template>
+          </div>
+        </div>
+      </template>
+    </main>
+
+    <footer class="text-center py-6 text-gray-500 text-sm">&copy; 2025 Komunitas Inspiratif. All rights reserved.</footer>
+
+    <script>
+      function community() {
+        return {
+          members: [],
+          async init() {
+            const res = await fetch("http://localhost:3000/api/members");
+            this.members = await res.json();
+          },
+        };
+      }
+    </script>
+  </body>
+</html>
