@@ -76,10 +76,8 @@ const quotes = [
     "Bekerja keraslah dalam diam, biarkan hasilnya yang bersuara. Tidak semua pencapaian harus diumumkan. Terkadang, hal terbaik datang saat kamu bekerja dalam kesunyian, dan orang-orang mulai bertanya: 'Siapa dia?' Karena hasil kerjamu akan berbicara jauh lebih keras daripada kata-katamu.",
     "Pikiran yang terbuka adalah awal dari setiap pencapaian besar. Jangan takut untuk berubah, jangan takut untuk belajar ulang. Dunia terus berkembang, dan kamu juga harus. Jadilah orang yang tidak takut salah, tapi takut berhenti belajar. Dengan itu, kamu akan sampai ke tempat yang tak terbayangkan.",
     "Hati yang bersyukur akan menemukan keindahan di setiap langkah. Ketika kamu mulai merasa lelah atau hilang arah, coba lihat kembali apa yang sudah kamu punya. Rasa syukur tidak hanya membuatmu tenang, tapi juga membukakan jalan baru yang tak pernah kamu lihat sebelumnya. Karena orang yang bersyukur, akan selalu cukup."
-  
-    // 31+ bisa ditambahkan bila ada tambahan anggota
+  ];
  
-];
 const kunci = [
   "Kreatif",
   "Tangguh",
