@@ -72,12 +72,14 @@ const deskripsiAnak = [
   "Anak 29",
   "Anak 30",
 ];
+app.use(express.static("public"));
 // Dummy data for members
 const members = Array.from({ length: 30 }, (_, i) => ({
   id: i + 1,
   name: ` ${names[i]}`,
   key: `kunci${i + 1}`,
   description: `Ini adalah deskripsi dari Anggota ${deskripsiAnak[i]}`,
+  photo: `/images/${i + 1}.jpg`,
 }));
 
 // Endpoint to get all member names (no keys)
