@@ -41,6 +41,13 @@ const names = [
   "Rafif Syahputra Pasaribu",
   "Yola Hardini Girsang",
 ];
+const laguAnggota = [
+  "https://www.youtube.com/watch?v=Oe421EPjeBE",
+  "https://www.youtube.com/watch?v=kXYiU_JCYtU",
+  "https://www.youtube.com/watch?v=60ItHLz5WEA",
+  // tambahkan 27 link lagu lainnya
+];
+
 const deskripsiAnak = [
   "Anak 1",
   "Anak 2",
