@@ -8,7 +8,7 @@
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </head>
   <body class="bg-gradient-to-br from-purple-100 to-white min-h-screen font-sans">
-    <audio id="themeAudio" src="/audio/theme.mp3"></audio>
+    <audio id="themeAudio" src="public/audio/theme.mp3" volume="0.5"></audio>
 
     <!-- Hero section -->
     <div class="h-screen w-full flex flex-col justify-center items-center bg-gray-900 dark:bg-gradient-to-r from-blue-400 to-cyan-300">
@@ -43,21 +43,25 @@
                 <button
                   class="mt-2 w-full bg-purple-600 text-white px-3 py-2 rounded-lg hover:bg-purple-700"
                   @click="
-                  fetch('https://komunitasliterasi-production.up.railway.app/api/unlock', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ id: member.id, key: inputKey })
-                  })
-                  .then(res => res.ok ? res.json() : res.json().then(err => Promise.reject(err)))
-                  .then(data => {
-                    info = data.description;
-                    playAudio();
-                  })
-                  .catch(err => error = err.error)
-                "
+    fetch('https://komunitasliterasi-production.up.railway.app/api/unlock', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ id: member.id, key: inputKey })
+    })
+    .then(res => res.ok ? res.json() : res.json().then(err => Promise.reject(err)))
+    .then(data => {
+      info = data.description;
+      const audio = document.getElementById('themeAudio');
+      if (audio && audio.paused) {
+        audio.play().catch(error => console.error('Audio play error:', error));
+      }
+    })
+    .catch(err => error = err.error)
+  "
                 >
                   Buka
                 </button>
+
                 <p class="text-red-500 text-sm mt-1" x-text="error"></p>
               </div>
             </template>
