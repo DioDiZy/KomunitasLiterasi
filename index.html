@@ -125,7 +125,8 @@
         return {
           members: [],
           async init() {
-            const res = await fetch("http://experienced-foggy-diagram.glitch.me/api/members");
+            const API_URL = "https://komunitas-backend.up.railway.app";
+            const res = await fetch(`${API_URL}/api/members`);
             this.members = await res.json();
           },
         };
