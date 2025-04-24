@@ -41,6 +41,8 @@ const names = [
   "Rafif Syahputra Pasaribu",
   "Yola Hardini Girsang",
 ];
+const firstNames = names.map((name) => name.split(" ")[0]);
+
 const quotes = [
   "Bermimpilah setinggi langit, lalu bangun dan wujudkan itu satu per satu.",
   "Langkah kecil hari ini akan jadi lompatan besar esok hari.",
@@ -80,7 +82,7 @@ const members = Array.from({ length: 30 }, (_, i) => ({
   id: i + 1,
   name: ` ${names[i]}`,
   key: `kunci${i + 1}`,
-  description: `Kamu tau ga, ${quotes[i]}`,
+  description: `${firstNames[i]}, Kamu tau ga, ${quotes[i]}`,
   photo: `public/images/${i + 1}.jpg`,
 }));
 
