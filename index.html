@@ -92,7 +92,7 @@
                 <button
                   class="mt-2 w-full bg-purple-600 text-white px-3 py-2 rounded-lg hover:bg-purple-700"
                   @click="
-                  fetch('http://localhost:3000/api/unlock', {
+                  fetch('https://komunitasliterasi-production.up.railway.app/api/unlock', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ id: member.id, key: inputKey })
