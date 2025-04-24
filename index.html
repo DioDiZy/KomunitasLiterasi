@@ -125,7 +125,7 @@
         return {
           members: [],
           async init() {
-            const API_URL = "https://komunitas-backend.up.railway.app";
+            const API_URL = "http://komunitasliterasi-production.up.railway.app/";
             const res = await fetch(`${API_URL}/api/members`);
             this.members = await res.json();
           },
