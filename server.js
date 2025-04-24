@@ -82,7 +82,7 @@ const members = Array.from({ length: 30 }, (_, i) => ({
   id: i + 1,
   name: ` ${names[i]}`,
   key: `kunci${i + 1}`,
-  description: `${firstNames[i]}, Kamu tau ga, ${quotes[i]}`,
+  description: `${firstNames[i]}, ${quotes[i]}`,
   photo: `public/images/${i + 1}.jpg`,
 }));
 
