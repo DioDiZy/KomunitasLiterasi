@@ -9,73 +9,21 @@
   </head>
   <body class="bg-gradient-to-br from-purple-100 to-white min-h-screen font-sans">
     <!-- Hero section -->
-    <section class="bg-blue-600 py-20">
-      <div class="container mx-auto px-4">
-        <div class="flex flex-col md:flex-row items-center justify-between">
-          <div class="md:w-1/2 mb-8 md:mb-0">
-            <h1 class="text-white font-bold text-5xl leading-tight mb-6">Discover the world's best coffee</h1>
-            <p class="text-white text-xl mb-8">From hand-picked farms to your cup, we source the finest beans and roast them to perfection.</p>
-            <a href="#" class="px-6 py-3 bg-white text-blue-600 font-bold rounded-full hover:bg-blue-700 transition duration-200">Shop now</a>
-          </div>
-          <div class="md:w-1/2">
-            <img src="https://plus.unsplash.com/premium_photo-1675716443562-b771d72a3da7" alt="Coffee beans" class="w-full rounded-lg shadow-lg" />
-          </div>
-        </div>
+    <div class="h-screen w-full flex flex-col justify-center items-center bg-gray-900 dark:bg-gradient-to-r from-blue-400 to-cyan-300">
+      <div class="absolute animate-bounce z-10 w-full h-[50%] flex justify-center items-end bg-gray-900 dark:bg-gradient-to-r from-blue-400 to-cyan-300">
+        <h1 class="sm:text-9xl text-7xl font-extrabold animate-[wiggle_1s_ease-in-out_infinite] text-indigo-500 font-mono">Komunitas</h1>
       </div>
-    </section>
+      <div class="absolute w-full h-[50%] flex items-end justify-center bg-gray-900 dark:bg-gradient-to-r from-blue-400 to-cyan-300">
+        <h1 class="sm:text-7xl text-5xl animate-[wiggle_1s_ease-in-out_infinite] text-center text-white dark:text-gray-600 font-extrabold">Literasi</h1>
+      </div>
 
-    <!-- Featured section -->
-    <section class="py-20">
-      <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-gray-800 mb-8">Featured products</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div class="bg-white rounded-lg shadow-md overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba" alt="Coffee" class="w-full h-64 object-cover" />
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-gray-800 mb-2">Single Origin Blend</h3>
-              <p class="text-gray-700 text-base">Our most popular blend, featuring beans from a single farm in Ethiopia. Notes of chocolate, berries, and citrus.</p>
-              <div class="mt-4 flex items-center justify-between">
-                <span class="text-gray-700 font-medium">$14.99</span>
-                <button class="px-4 py-2 bg-blue-600 text-white font-bold rounded-full hover:bg-blue-700 transition duration-200">Add to cart</button>
-              </div>
-            </div>
-          </div>
-          <div class="bg-white rounded-lg shadow-md overflow-hidden">
-            <img src="https://plus.unsplash.com/premium_photo-1675716443562-b771d72a3da7" alt="Coffee" class="w-full h-64 object-cover" />
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-gray-800 mb-2">Dark Roast Blend</h3>
-              <p class="text-gray-700 text-base">A bold and flavorful blend of beans from Brazil, Colombia, and Indonesia. Notes of caramel, nuts, and tobacco.</p>
-              <div class="mt-4 flex items-center justify-between">
-                <span class="text-gray-700 font-medium">$12.99</span>
-                <button class="px-4 py-2 bg-blue-600 text-white font-bold rounded-full hover:bg-blue-700 transition duration-200">Add to cart</button>
-              </div>
-            </div>
-          </div>
-          <div class="bg-white rounded-lg shadow-md overflow-hidden">
-            <img src="https://plus.unsplash.com/premium_photo-1675716443562-b771d72a3da7" alt="Coffee" class="w-full h-64 object-cover" />
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-gray-800 mb-2">Hitam Roast Blend</h3>
-              <p class="text-gray-700 text-base">A bold and flavorful blend of beans from Brazil, Colombia, and Indonesia. Notes of caramel, nuts, and tobacco.</p>
-              <div class="mt-4 flex items-center justify-between">
-                <span class="text-gray-700 font-medium">$12.99</span>
-                <button class="px-4 py-2 bg-blue-600 text-white font-bold rounded-full hover:bg-blue-700 transition duration-200">Add to cart</button>
-              </div>
-            </div>
-          </div>
-          <div class="bg-white rounded-lg shadow-md overflow-hidden">
-            <img src="https://plus.unsplash.com/premium_photo-1675716443562-b771d72a3da7" alt="Coffee" class="w-full h-64 object-cover" />
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-gray-800 mb-2">Dark Roast Blend</h3>
-              <p class="text-gray-700 text-base">A bold and flavorful blend of beans from Brazil, Colombia, and Indonesia. Notes of caramel, nuts, and tobacco.</p>
-              <div class="mt-4 flex items-center justify-between">
-                <span class="text-gray-700 font-medium">$12.99</span>
-                <button class="px-4 py-2 bg-blue-600 text-white font-bold rounded-full hover:bg-blue-700 transition duration-200">Add to cart</button>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div id="countdown" class="absolute top-16 flex items-center justify-center text-gray-200 dark:text-white sm:text-5xl text-3xl">
+        <span id="days" class="font-semibold pr-2"></span>
+        <span id="dates" class="text-purple-500 font-semibold pr-2"></span>
+        <span id="times"></span>
+        <span class="text-sky-500 font-semibold pr-2">.</span>
       </div>
-    </section>
+    </div>
 
     <main class="container mx-auto px-4 py-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" x-data="community()" x-init="init()">
       <template x-for="member in members" :key="member.id">
@@ -131,6 +79,33 @@
           },
         };
       }
+    </script>
+    <script>
+      // Update the current time every 1 second
+      const x = setInterval(function () {
+        // Get the current date and time
+        const now = new Date();
+
+        // Get the day, month, year, hour, minute, and second
+        const daysOfWeek = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
+        const day = daysOfWeek[now.getDay()];
+        const date = now.getDate();
+        const month = now.getMonth() + 1; // Months are zero-indexed
+        const year = now.getFullYear();
+        const hours = now.getHours();
+        const minutes = now.getMinutes();
+        const seconds = now.getSeconds();
+
+        // Format time with leading zero for single digits
+        const formattedHours = hours < 10 ? "0" + hours : hours;
+        const formattedMinutes = minutes < 10 ? "0" + minutes : minutes;
+        const formattedSeconds = seconds < 10 ? "0" + seconds : seconds;
+
+        // Display the current time and date in the HTML
+        document.getElementById("days").innerHTML = day + ",";
+        document.getElementById("dates").innerHTML = `${date}/${month}/${year}` + ",";
+        document.getElementById("times").innerHTML = `${formattedHours}:${formattedMinutes}:${formattedSeconds}`;
+      }, 1000);
     </script>
   </body>
 </html>
