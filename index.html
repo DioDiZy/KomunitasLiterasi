@@ -125,7 +125,7 @@
         return {
           members: [],
           async init() {
-            const res = await fetch("http://localhost:3000/api/members");
+            const res = await fetch("http://experienced-foggy-diagram.glitch.me/api/members");
             this.members = await res.json();
           },
         };
