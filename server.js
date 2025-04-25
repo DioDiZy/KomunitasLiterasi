@@ -78,8 +78,8 @@ const quotes = [
 
 const kunci = [
   "Visioner", // Dio Syahputra: punya visi besar, pemimpin yang peka dan berpikir ke depan
-  "Gigih", // Muhammad Roekhan: penuh semangat, tahan banting, selalu mau belajar
-  "Karismatik", // Livia Salsabila: punya pesona saat berbicara dan berdiri di depan umum
+  "Karismatik", // Muhammad Roekhan: penuh semangat, tahan banting, selalu mau belajar
+  "Gigih", // Livia Salsabila: punya pesona saat berbicara dan berdiri di depan umum
   "Penengah", // Gabriella F. Pandiangan: sabar, bijak, jadi jembatan di tengah konflik
   "Potensial", // Stevyn Angely Hutabarat: punya bakat besar yang terus tumbuh
   "Bijaksana", // Dwi Alya Artika: inspiratif, mampu memberi pandangan matang
